@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_task_manager_sqlite_Task" items="${tasks}" z="RLUqqV8NA1A/9Z9L0q8fkbslALw=">
+        <table:table data="${tasks}" id="l_task_manager_sqlite_Task" path="/tasks" z="Trix8AQgTnuRnOws+5tWIzVlmho=">
+            <table:column id="c_task_manager_sqlite_Task_taskname" property="taskname" z="iwpBZXALA81RodsuYAn8UrNR/3I="/>
+            <table:column date="true" dateTimePattern="${task_deliverydate_date_format}" id="c_task_manager_sqlite_Task_deliveryDate" property="deliveryDate" z="0TRXf8n+Ous5WMqZyaXFl1dbZfM="/>
+            <table:column id="c_task_manager_sqlite_Task_owner" property="owner" z="dzBmwH4lZEx9oRXGKGBlImMGON4="/>
+            <table:column id="c_task_manager_sqlite_Task_taskDescription" property="taskDescription" z="Yfk946oqArT9N7N5wXtpQHXvqEA="/>
+            <table:column id="c_task_manager_sqlite_Task_isComplete" property="isComplete" z="9M1Dkr2eLsggpz+AOb0upn7Ur0I="/>
+        </table:table>
+    </page:list>
+</div>

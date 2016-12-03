@@ -1,0 +1,14 @@
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2016-12-03 11:15:27
+project --topLevelPackage task.manager.sqlite --projectName TaskManagerSQLite --java 6 --packaging JAR
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2016-12-03 11:15:28
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2016-12-03 11:15:33
+jpa setup --database MYSQL --provider HIBERNATE --databaseName TasksDB
+entity jpa --class ~.Task
+field string --fieldName taskname --notNull --sizeMax 20 --class ~.Task
+field date --fieldName deliveryDate --notNull --class ~.Task --type java.util.Date
+field string --fieldName owner --class ~.Task --notNull --sizeMax 20 
+field string --fieldName taskDescription --notNull --class ~.Task 
+field boolean --fieldName isComplete --notNull  --value false
+web mvc setup
+web mvc all --package ~.web
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2016-12-03 12:52:36

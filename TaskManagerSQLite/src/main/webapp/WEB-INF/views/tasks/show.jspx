@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_task_manager_sqlite_Task" object="${task}" path="/tasks" z="rL0WpIA7usspzXgSvLBmj0XA/tM=">
+        <field:display field="taskname" id="s_task_manager_sqlite_Task_taskname" object="${task}" z="TZjfvOt+aYTHw8PHCBi16Sg9+wo="/>
+        <field:display date="true" dateTimePattern="${task_deliverydate_date_format}" field="deliveryDate" id="s_task_manager_sqlite_Task_deliveryDate" object="${task}" z="xJo4/11SaAnfjDBcykCroL6+dIg="/>
+        <field:display field="owner" id="s_task_manager_sqlite_Task_owner" object="${task}" z="plZcNmvIIK8cAKyCfOZl58Rsmjw="/>
+        <field:display field="taskDescription" id="s_task_manager_sqlite_Task_taskDescription" object="${task}" z="zcErQfCgSUhDq2TVcua2/Tz90lQ="/>
+        <field:display field="isComplete" id="s_task_manager_sqlite_Task_isComplete" object="${task}" z="/Kn2L0/wrMavjFP+PCFskeM0nsg="/>
+    </page:show>
+</div>
